@@ -1,0 +1,634 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  font-size: 10px;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  width: 100vw;
+}
+
+.icon-scroll {
+  text-align: center;
+  color: #304e42;
+  font-size: 2rem;
+  margin-top: 3rem;
+  text-decoration: none;
+}
+
+.icon-scroll:hover {
+  text-decoration: none;
+  color: #79b89f;
+}
+
+.icon-scroll:hover::before {
+  content: "scroll";
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  padding-right: 1rem;
+}
+
+.icon-scroll:hover::after {
+  content: "down";
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  padding-left: 1rem;
+}
+
+.fadeIn {
+  display: none;
+}
+
+/*---------------------------------------------------------------Typography--*/
+
+.websiteName {
+  font-weight: 200;
+}
+
+.title {
+  font-size: 8rem;
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: uppercase;
+  display: block;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  letter-spacing: 1rem;
+}
+
+.heading-title {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.map-title {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.text-section {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.link-section,
+.address {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.submit {
+  font-family: "Nunito-sans", sans-serif;
+  font-size: 1rem;
+  color: #033646;
+  text-transform: uppercase;
+}
+
+#successfully-submitted {
+  font-family: "Nunito-sans", sans-serif;
+  font-size: 1rem;
+  color: #304e42;
+  text-transform: uppercase;
+}
+
+.footer-title {
+  font-size: 3rem;
+}
+
+.footer-text {
+  font-weight: 400;
+}
+
+small {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+/*---------------------------------------------------------------Color palette--*/
+
+.websiteName {
+  color: #e9e6e6;
+}
+
+.heading-title {
+  color: #033646;
+}
+
+.link-section {
+  color: #033646;
+}
+
+.footer-title {
+  color: #033646;
+}
+
+.social {
+  color: #033646;
+}
+
+/*---------------------------------------------------------------Menu--*/
+.menu-expanded {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  visibility: hidden;
+}
+
+div.menu-links ul {
+  padding: 0;
+  margin: auto;
+}
+
+li a.link-item {
+  font-family: "Nunito Sans", sans-serif;
+  color: #e9e6e6;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.navbar-custom {
+  z-index: 4;
+  position: fixed;
+  width: 4rem;
+  background-color: white;
+  height: 100vh;
+}
+
+.navbar-custom-small {
+  z-index: 4;
+  position: fixed;
+  height: 4rem;
+  width: 100vw;
+  background-color: #e9e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+}
+
+#dots-container {
+  width: 74rem;
+  height: 1rem;
+}
+
+#dots-container a:hover {
+  text-decoration: none;
+}
+
+span.dot {
+  height: 1rem;
+  width: 1rem;
+  border: 1px solid #e9e6e6;
+  background-color: #95a5a6;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.close-icon {
+  color: #e9e6e6;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+a#navbarMenuLink {
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #033646;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -webkit-text-orientation: upright;
+  text-orientation: upright;
+  margin-top: 1rem;
+  font-weight: 600;
+  padding: 0;
+}
+
+a#navbarMenuLink:hover {
+  color: #79b89f;
+}
+/*---------------------------------------------------------------Landing Page--*/
+
+#landingPage {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+#videoBackground {
+  position: fixed;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+#homePageText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+.icon-landing {
+  bottom: 10rem;
+}
+
+a.subtitle:hover,
+a.subtitle:active {
+  text-decoration: none;
+  font-weight: 400;
+  color: #79b89f;
+  font-size: 2.5rem;
+}
+
+h1.websiteName {
+  border: 0.5rem solid #e9e6e6;
+}
+
+/*---------------------------------------------------------------Glam and camping/Information Section--*/
+
+.section-area {
+  margin: 0;
+  padding: 9rem 0 0 0;
+  background-color: #e9e6e6;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+}
+
+.heading-title {
+  margin-top: 0;
+}
+
+.section-row {
+  width: 100%;
+  margin: 5rem 0;
+  padding: 0;
+}
+
+.section-column {
+  overflow: hidden;
+}
+
+.image-container {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.image-section {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+
+.text-section {
+  margin: 2rem;
+}
+
+/*---------------------------------------------------------------Locations/Map section--*/
+div#map {
+  height: 50rem;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.link-map:hover {
+  text-decoration: none;
+  color: #79b89f;
+  border: 1px solid #79b89f;
+}
+
+/*---------------------------------------------------------------About us/Recommended by section--*/
+
+.image-recommended {
+  height: 20rem;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/*---------------------------------------------------------------Contact section--*/
+
+.icon-last:hover::before {
+  content: "to the";
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.icon-last:hover::after {
+  content: "top";
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.form-check {
+  display: inline-block;
+  margin: 0 2rem 2rem 0;
+}
+.contact-form {
+  width: 45rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #033646;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.form-column {
+  text-align: center;
+}
+
+label {
+  margin-top: 1rem;
+  line-height: 2rem;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+input.form-control {
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.form-check-input {
+  margin-top: 1rem;
+}
+
+textarea#message {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+*::-webkit-input-placeholder {
+  letter-spacing: 0.5rem;
+  font-size: 1.5rem;
+}
+
+*::-moz-placeholder {
+  letter-spacing: 0.5rem;
+  font-size: 1.5rem;
+}
+
+*:-ms-input-placeholder {
+  letter-spacing: 0.5rem;
+  font-size: 1.5rem;
+}
+
+*::-ms-input-placeholder {
+  letter-spacing: 0.5rem;
+  font-size: 1.5rem;
+}
+
+*::placeholder {
+  letter-spacing: 0.5rem;
+  font-size: 1.5rem;
+}
+
+#contact-section {
+  margin-bottom: 0;
+  padding-bottom: 3rem;
+}
+
+button.submit {
+  margin-top: 1rem;
+}
+
+button.submit:hover {
+  background-color: #abd2c3;
+  border-color: #304e42;
+}
+
+input:hover,
+textarea:hover {
+  border-color: #304e42;
+  background-color: #ddede7;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px groove #304e42;
+  background-color: #79b89f;
+}
+
+#successfully-submitted {
+  display: none;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  border: 1px solid #033646;
+  border-radius: 0.5rem;
+  background-color: #ddede7;
+  width: 100%;
+}
+
+/*---------------------------------------------------------------Footer--*/
+
+#footer {
+  padding-top: 0rem;
+  padding-bottom: 2rem;
+}
+
+.link-section {
+  text-decoration: none;
+}
+
+.link-section:hover,
+.link-section:active {
+  text-decoration: none;
+  color: #304e42;
+  font-weight: 400;
+}
+
+a.icon {
+  color: #033646;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+a.icon:hover,
+a.icon:active,
+span.link-section:hover,
+span.link-section:active {
+  color: #79b89f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+span.link-section {
+  padding-left: 1rem;
+}
+
+.social {
+  padding-right: 1rem;
+}
+
+.social:hover,
+.social:active {
+  color: #79b89f;
+  text-decoration: none;
+}
+
+/*---------------------------------------------------------------Media Queries--*/
+@media screen and (min-width: 1023px) {
+  li a.link-item {
+    font-size: 8rem;
+  }
+
+  .close-icon {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  .contact-form {
+    width: 50rem;
+  }
+
+  p#successfully-submitted {
+    width: 50rem;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .infowindow {
+    width: 20rem;
+  }
+
+  .map-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .title {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .logo-small-screen {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .recommended-row-small-screen {
+    margin-top: 1.5rem;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .text-section {
+    font-size: 1.5rem;
+  }
+
+  .heading-title {
+    font-size: 3rem;
+  }
+
+  label {
+    font-size: 1.5rem;
+  }
+}
