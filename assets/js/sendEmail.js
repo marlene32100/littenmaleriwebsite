@@ -1,12 +1,11 @@
 function sendEmail(contactForm) {
   emailjs
-    .send("gmail", "katia", {
+    .send("service_09rzw4u", "maleri_request", {
       from_name: contactForm.fName.value,
       from_surname: contactForm.lName.value,
       from_phone: contactForm.phone.value,
       from_email: contactForm.email.value,
       from_message: contactForm.message.value,
-      from_chef: contactForm.chef.value,
     })
     .then(
       function (response) {
@@ -15,7 +14,6 @@ function sendEmail(contactForm) {
         document.getElementById("email").value = "";
         document.getElementById("phone").value = "";
         document.getElementById("message").value = "";
-        document.getElementById("chef").checked = false;
         document.getElementById("submit").style.backgroundColor = "#F8F9FA";
         document.getElementById("successfully-submitted").style.display =
           "block";
